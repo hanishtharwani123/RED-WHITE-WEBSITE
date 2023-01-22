@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Poppins&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 0, 0);
+}
+
+#header {
+    width: 100%;
+}
+
+nav {
+    padding: 13.5px 49px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    width: 100%;
+    height: 69px;
+    padding-top: 49px;
+}
+
+nav.sticky {
+    padding-top: 2rem;
+    background: #ffffff;
+}
+
+nav.sticky .logo,
+nav.sticky ul li {
+    color: #000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    padding: 1.32vw;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav.sticky ul li::after {
+    background: red;
+}
+
+
+.order {
+    background: transparent;
+    border: 1.4px solid black;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 19px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.order:hover {
+    background: #fff;
+    border: 1.4px solid rgb(255, 255, 255);
+}
+
+nav.sticky .order:hover {
+    color: #fff;
+    background: #000;
+}
+
+.new1 {
+    border: 1px solid #a40606;
+    margin-top: 84px;
+}
+
+.main {
+    margin-top: 28.8px;
+}
+
+.redW {
+    font-size: 234px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-bottom: -140px;
+}
+
+.ramen {
+    font-size: 344px;
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.flexx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    flex-wrap: wrap;
+}
+
+.cup {
+    width: 520px;
+}
+
+.word {
+    color: #000;
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.new {
+    margin-top: 80px;
+    border: 1px solid #a40606;
+}
+
+.sec-page {
+    width: 100%;
+    padding: 76px;
+}
+
+.taste {
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+
+.plant {
+    font-size: 84px;
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-top: 15px;
+    white-space: pre-line;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    height: 299px;
+}
+
+.new2 {
+    border: 1px solid #a40606;
+}
+
+.gift-page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.page {
+    margin-top: 87px;
+    margin-bottom: 95px;
+}
+
+.headd {
+    color: #000;
+    font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.voucher {
+    color: #000;
+    font-size: 26px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.cards {
+    height: 339px;
+}
+
+.buy {
+    padding: 10px 37px;
+    background: transparent;
+    border: 1.4px solid black;
+    font-size: 16px;
+    margin-top: 26px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.buy:hover {
+    background: #fff;
+    border: 1.4px solid rgb(255, 255, 255);
+}
+
+.new3 {
+    border: 1px solid #a40606;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vegan {
+    margin-top: 95px;
+    margin-bottom: 90px;
+}
+
+.five {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.five-star {
+    width: 40px;
+}
+
+.boston {
+    color: #000;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    width: 600px;
+}
+
+.review {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-top: 22px;
+    letter-spacing: 2px;
+}
+
+.new4 {
+    border: 1px solid #a40606;
+}
+
+.story {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.our-story {
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+}
+
+.plant1 {
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    width: 450px;
+}
+
+.learn {
+    padding: 10px 37px;
+    background: transparent;
+    border: 1.4px solid black;
+    font-size: 16px;
+    margin-top: 26px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.learn:hover {
+    background: #fff;
+    border: 1.4px solid rgb(255, 255, 255);
+}
+
+.boys {
+    height: 552px;
+    width: 548px;
+}
+
+.new5 {
+    border: 1px solid #a40606;
+}
+
+.follow {
+    margin-bottom: 126px;
+    margin-top: 65px;
+}
+
+.us {
+    color: #000;
+    font-size: 42px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.grd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 23px;
+}
+
+.imag {
+    width: 396px;
+    height: 295px;
+    border-radius: 22px;
+    padding: 10px;
+}
+
+.imag1 {
+    width: 396px;
+    height: 295px;
+    border-radius: 22px;
+    padding: 10px;
+}
+
+.footer {
+    background: #000;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 42px;
+}
+
+.foot {
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.social {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*********** MAKING WEBSITE RESPONSIVE *********/
+
+@media screen and (max-width:840px) {
+    nav ul li {
+        display: none;
+    }
+
+    .imag1 {
+        display: none;
+    }
+
+    .our-story {
+        text-align: center;
+    }
+
+    .plant1 {
+        text-align: center;
+    }
+
+    .learn {
+        text-align: center;
+        padding: 10px 100px;
+    }
+
+    .our {
+        display: grid;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .redW {
+        font-size: 170px;
+        margin-bottom: -100px;
+    }
+
+    .ramen {
+        font-size: 248px;
+    }
+
+    .cup {
+        width: 300px;
+    }
+
+    .menu {
+        height: 210px;
+        flex-wrap: none;
+    }
+
+    .cards {
+        height: 300px;
+    }
+
+    .boston {
+        font-size: 43px;
+        width: 500px;
+    }
+
+    .boys {
+        height: 502px;
+        width: 508px;
+    }
+
+    .plant {
+        font-size: 62px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .redW {
+        font-size: 120px;
+        margin-bottom: -60px;
+    }
+
+    .ramen {
+        font-size: 175px;
+    }
+
+    .our-story {
+        text-align: center;
+    }
+
+    .cup {
+        width: 200px;
+    }
+
+    .word {
+        font-size: 30px;
+    }
+
+    .taste {
+        font-size: 21px;
+    }
+
+    .plant {
+        font-size: 43px;
+    }
+
+    .menu {
+        height: 150px;
+    }
+
+    .headd {
+        font-size: 50px;
+    }
+
+    .voucher {
+        font-size: 22px;
+    }
+
+    .cards {
+        height: 190px;
+    }
+
+    .buy {
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+
+    .five-star {
+        width: 30px;
+    }
+
+    .boston {
+        font-size: 25px;
+        width: 400px;
+    }
+
+    .review {
+        font-size: 20px;
+    }
+
+
+    .plant1 {
+        font-size: 22px;
+        width: 340px;
+        text-align: center;
+    }
+
+    .learn {
+        padding: 10px 1px;
+        background: transparent;
+        border: 1.4px solid black;
+        font-size: 16px;
+        margin-top: 26px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .boys {
+        height: 342px;
+        width: 338px;
+    }
+
+    .us {
+        font-size: 32px;
+    }
+
+
+    .imag {
+        width: 276px;
+        height: 195px;
+        border-radius: 22px;
+        padding: 10px;
+    }
+
+    .footer {
+        height: 130px;
+    }
+
+    .foot {
+        color: #fff;
+        font-size: 33px;
+    }
+
+    .social {
+        color: #fff;
+        font-size: 9px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .order {
+        font-size: 12px;
+        padding: 4px 11px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .redW {
+        font-size: 73px;
+        margin-bottom: -40px;
+    }
+
+    .ramen {
+        font-size: 107px;
+    }
+
+    .cup {
+        width: 130px;
+    }
+
+    .word {
+        font-size: 18px;
+    }
+
+    .taste {
+        font-size: 19px;
+    }
+
+    .plant {
+        font-size: 33px;
+    }
+
+    .menu {
+        height: 123px;
+    }
+
+    .headd {
+        font-size: 43px;
+    }
+
+    .voucher {
+        font-size: 17px;
+    }
+
+    .cards {
+        height: 134px;
+    }
+
+    .buy {
+        padding: 6px 20px;
+        font-size: 13px;
+    }
+
+    .five-star {
+        width: 30px;
+    }
+
+    .boston {
+        font-size: 25px;
+        width: 257px;
+    }
+
+    .review {
+        font-size: 19px;
+        letter-spacing: .5px;
+    }
+
+    .our-story {
+        font-size: 39px;
+    }
+
+
+    .plant1 {
+        font-size: 19px;
+        width: 226px;
+        text-align: center;
+    }
+
+    .learn {
+        padding: 8px 1px;
+        background: transparent;
+        border: 1.4px solid black;
+        font-size: 12px;
+    }
+
+    .boys {
+        height: 272px;
+        width: 251px;
+    }
+
+    .us {
+        font-size: 24px;
+    }
+
+
+    .imag {
+        width: 224px;
+        height: 160px;
+        border-radius: 22px;
+        padding: 8px;
+    }
+
+    .footer {
+        height: 105px;
+        padding: 0px 20px;
+    }
+
+    .foot {
+        color: #fff;
+        font-size: 21px;
+    }
+
+    .social {
+        color: #fff;
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .order {
+        font-size: 9px;
+        padding: 4px 11px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav {
+        padding: 50px 35px;
+    }
+
+    .page {
+        margin-top: 67px;
+        margin-bottom: 55px;
+    }
+
+    .vegan {
+        margin-top: 72px;
+        margin-bottom: 74px;
+    }
+
+    .story {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    .follow {
+        margin-bottom: 76px;
+        margin-top: 65px;
+    }
+
+    .sec-page {
+        width: 100%;
+        padding: 46px;
+    }
+}
